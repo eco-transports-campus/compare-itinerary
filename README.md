@@ -15,15 +15,9 @@ npm install compare-itinerary
 // Import package
 var compareItinerary = require("compare-itinerary")
 
-compareItinerary.getDistances(
-  "Paris",  // Origin
-  "Orsay",  // Destination
-  "driving", // Mode
-  "AIzaSyD35qhFxfb4gzqB4a_egNd0z4JgmgCIUUY" // Api Key
-).then(data => {
-  // Do something with data
-  console.log(data)
-})
+const trajects = compareItinerary.getSameTrajects()
+
+console.log(trajects)
 ```
 
 ## Returned value
