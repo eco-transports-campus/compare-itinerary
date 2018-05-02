@@ -2,8 +2,8 @@
 # compare-itinerary
 A module to compare an itinerary with an array of itineraries.
 
-## Prerequisite
-...
+## Utility
+This module allow you to give an itinerary, a stock of itinerary and a radius and see if there is already one existing itinerary that match your itinerary. You can modify the value of the radius in meter.
 
 ## Install
 ```
@@ -15,33 +15,46 @@ npm install compare-itinerary
 // Import package
 var compareItinerary = require("compare-itinerary")
 
-const trajects = compareItinerary.getSameTrajects()
+const trajects = compareItinerary.getSameTrajects(itinerary, existingItinerary, radius);
 
 console.log(trajects)
 ```
 
+## Input value example
+```javascript
+var existingItinerary = [{id: 1, from: {lat: 10.434, lon: 20.214}, to: {lat: 20.454, lon: 40.455}},
+				            {id: 2, from: {lat: 15.455, lon: 20.346}, to: {lat: 30.112, lon: 35.069}},
+				            {id: 3, from: {lat: 16.316, lon: 19.245}, to: {lat: 10.367, lon: 20.985}},
+				            {id: 4, from: {lat: 14.346, lon: 20.119}, to: {lat: 29.026, lon: 34.399}}];
+                        
+var itinerary = {from: {lat: 10.434, lon: 20.214}, to: {lat: 20.454, lon: 40.455}}; 
+
+var radius = 250; //the value in meters of the max distance betwin the base traject and the existing one.
+```
+
 ## Returned value
 ```json
-{
-   "destination_addresses" : [ "91400 Orsay, France" ],
-   "origin_addresses" : [ "Paris, France" ],
-   "rows" : [
-      {
-         "elements" : [
-            {
-               "distance" : {
-                  "text" : "32,0 km",
-                  "value" : 31962
-               },
-               "duration" : {
-                  "text" : "38 minutes",
-                  "value" : 2295
-               },
-               "status" : "OK"
-            }
-         ]
+[
+   {
+      id: 1,
+      from : {
+         lat : 12.236,
+         lon : 18.541
+      },
+      to : {
+         lat : 35.354,
+         lon : 17.544
       }
-   ],
-   "status" : "OK"
-}
+   },{
+      id: 8,
+      from : {
+         lat : 12.333,
+         lon : 18.005
+      },
+      to : {
+         lat : 35.654,
+         lon : 17.989
+      }
+   },
+]
 ```
