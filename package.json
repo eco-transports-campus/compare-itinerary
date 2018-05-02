@@ -1,0 +1,19 @@
+{
+  "name": "compare-itinerary",
+  "version": "1.0.0",
+  "description": "A module to compare an itinerary with an array of existing initeraries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eco-transports-campus/compare-itinerary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eco-transports-campus/compare-itinerary/issues"
+  },
+  "homepage": "https://github.com/eco-transports-campus/compare-itinerary#readme"
+}
