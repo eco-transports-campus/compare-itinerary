@@ -1,6 +1,6 @@
 {
   "name": "compare-itinerary",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A module to compare an itinerary with an array of existing initeraries",
   "main": "index.js",
   "scripts": {
