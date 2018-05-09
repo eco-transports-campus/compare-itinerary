@@ -1,6 +1,7 @@
 ![Polytech Paris-sud](https://www.usinenouvelle.com/mediatheque/3/4/0/000268043_image_260x175.jpg)
 # compare-itinerary
 _version 1.0.1_
+
 A module to compare an itinerary with an array of itineraries.
 
 ## Utility
