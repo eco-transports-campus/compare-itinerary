@@ -7,12 +7,14 @@ A module to compare an itinerary with an array of itineraries.
 ## Utility
 This module allow you to give an itinerary, a stock of itinerary and a radius and see if there is already one existing itinerary that match your itinerary. You can modify the value of the radius in meter.
 
+Since the version 1.0.2, you can also compare 2 place to see if the distance between them is smaller than a given distance.
+
 ## Install
 ```
 npm install compare-itinerary
 ```
 
-## Example
+## Example to compare itinerary
 ```javascript
 // Import package
 var compareItinerary = require("compare-itinerary")
@@ -59,4 +61,30 @@ var radius = 250; //the value in meters of the max distance betwin the base traj
       }
    },
 ]
+```
+
+## Example to compare place
+```javascript
+// Import package
+var compareItinerary = require("compare-itinerary")
+
+const near = compareItinerary.isNear(placeOne, placeTwo, radius);
+
+console.log(near)
+```
+
+## Input value example
+```javascript
+                        
+var placeOne = {lat: 10.434, lon: 20.214}; 
+var placeTwo = {lat: 10.459, lon: 20.194}; 
+
+var radius = 500; //the value in meters of the max distance between the two place
+```
+
+
+
+## Returned value
+```javascript
+true
 ```
