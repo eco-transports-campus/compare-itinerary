@@ -23,9 +23,9 @@ console.log(trajects)
 ## Input value example
 ```javascript
 var existingItinerary = [{id: 1, from: {lat: 10.434, lon: 20.214}, to: {lat: 20.454, lon: 40.455}},
-				            {id: 2, from: {lat: 15.455, lon: 20.346}, to: {lat: 30.112, lon: 35.069}},
-				            {id: 3, from: {lat: 16.316, lon: 19.245}, to: {lat: 10.367, lon: 20.985}},
-				            {id: 4, from: {lat: 14.346, lon: 20.119}, to: {lat: 29.026, lon: 34.399}}];
+			{id: 2, from: {lat: 15.455, lon: 20.346}, to: {lat: 30.112, lon: 35.069}},
+			{id: 3, from: {lat: 16.316, lon: 19.245}, to: {lat: 10.367, lon: 20.985}},
+			{id: 4, from: {lat: 14.346, lon: 20.119}, to: {lat: 29.026, lon: 34.399}}];
                         
 var itinerary = {from: {lat: 10.434, lon: 20.214}, to: {lat: 20.454, lon: 40.455}}; 
 
@@ -33,7 +33,7 @@ var radius = 250; //the value in meters of the max distance betwin the base traj
 ```
 
 ## Returned value
-```json
+```javascript
 [
    {
       id: 1,
