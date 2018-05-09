@@ -26,12 +26,13 @@ console.log(trajects)
 
 ## Input value example
 ```javascript
-var existingItinerary = [{id: 1, from: {lat: 10.434, lon: 20.214}, to: {lat: 20.454, lon: 40.455}},
-			{id: 2, from: {lat: 15.455, lon: 20.346}, to: {lat: 30.112, lon: 35.069}},
-			{id: 3, from: {lat: 16.316, lon: 19.245}, to: {lat: 10.367, lon: 20.985}},
-			{id: 4, from: {lat: 14.346, lon: 20.119}, to: {lat: 29.026, lon: 34.399}}];
+var existingItinerary = [{id: 1, from: {lat: 48.6895, lon: 2.1855}, to: {lat: 48.7090, lon: 2.171}},
+			{id: 2, from: {lat: 48.69546, lon: 2.1631}, to: {lat: 48.7090, lon: 2.171}},
+			{id: 3, from: {lat: 48.7075, lon: 2.23745}, to: {lat: 48.7090, lon: 2.171}},
+			{id: 3, from: {lat: 48.68775, lon: 2.18799}, to: {lat: 48.7090, lon: 2.171}},
+			{id: 4, from: {lat: 48.7090, lon: 2.171}, to: {lat: 29.026, lon: 34.399}}];
                         
-var itinerary = {from: {lat: 10.434, lon: 20.214}, to: {lat: 20.454, lon: 40.455}}; 
+var itinerary = {from: {lat: 48.68775, lon: 2.18799}, to: {lat: 48.7090, lon: 2.171}};
 
 var radius = 250; //the value in meters of the max distance betwin the base traject and the existing one.
 ```
@@ -42,22 +43,22 @@ var radius = 250; //the value in meters of the max distance betwin the base traj
    {
       id: 1,
       from : {
-         lat : 12.236,
-         lon : 18.541
+         lat : 48.6895,
+         lon : 2.1855
       },
       to : {
-         lat : 35.354,
-         lon : 17.544
+         lat : 48.7090,
+         lon : 2.171
       }
    },{
-      id: 8,
+      id: 3,
       from : {
-         lat : 12.333,
-         lon : 18.005
+         lat : 48.68775,
+         lon : 2.18799
       },
       to : {
-         lat : 35.654,
-         lon : 17.989
+         lat : 48.7090,
+         lon : 2.171
       }
    },
 ]
