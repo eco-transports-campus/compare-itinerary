@@ -25,3 +25,10 @@ exports.getSameTrajects = function (itinerary, data, r) {
 	}
 	return trajects;
 };
+
+exports.isNear = function (place1, place2, r) {
+	if (getDistanceFromLatLonInKm(place1, place2) < (r / 1000)) {
+		return true;
+	}
+	return false;
+};
